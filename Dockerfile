@@ -21,4 +21,4 @@ WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 
 # Jalankan aplikasi
-CMD ["sh", "-c", "java -jar /a
+CMD java -jar /app/app.jar --server.port=${PORT:-8080}
