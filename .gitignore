@@ -1,0 +1,10 @@
+target/
+build/
+
+*.env
+application.properties
+application.yml
+
+*.log
+*.class
+*.jar
