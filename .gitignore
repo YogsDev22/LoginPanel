@@ -1,10 +1,37 @@
+# File dan folder hasil build
 target/
 build/
 
+# File konfigurasi IDE
+*.iml
+*.ipr
+*.iws
+/.idea/
+/.vscode/
+/*.log
+
+# File sementara OS
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Dependency lokal
+.mvn/
+.gradle/
+node_modules/
+
+# File konfigurasi pengguna
 *.env
 application.properties
 application.yml
+application-local.properties
+.env
 
-*.log
-*.class
-*.jar
+# Cache dan log
+/logs/
+/tmp/
+hs_err_pid*
+
+# File docker yang tidak perlu
+docker-compose.override.yml

@@ -3,5 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/../../" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/LoginPanel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/my-spring-boot-app" vcs="Git" />
   </component>
 </project>
