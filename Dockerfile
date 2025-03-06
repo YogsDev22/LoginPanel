@@ -7,6 +7,9 @@ WORKDIR /app
 # Copy semua file source code ke dalam container
 COPY . .
 
+# Beri izin eksekusi ke mvnw agar bisa dijalankan
+RUN chmod +x mvnw
+
 # Build aplikasi menggunakan Maven
 RUN ./mvnw clean package -DskipTests
 
@@ -18,4 +21,4 @@ WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 
 # Jalankan aplikasi
-CMD ["sh", "-c", "java -jar /app/app.jar --server.port=${PORT:-8080}"]
+CMD ["sh", "-c", "java -jar /a
